@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7FE926A-AB1B-4689-B6F1-2465EB7A84C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AbdonCokeSystem.My.MyApplication</StartupObject>
+    <RootNamespace>AbdonCokeSystem</RootNamespace>
+    <AssemblyName>AbdonCokeSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AbdonCokeSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AbdonCokeSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="crystalAttendance.Designer.vb">
+      <DependentUpon>crystalAttendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crystalAttendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crystalTransactions.Designer.vb">
+      <DependentUpon>crystalTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crystalTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crystalTryStocks.Designer.vb">
+      <DependentUpon>crystalTryStocks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crystalTryStocks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crystalUser.Designer.vb">
+      <DependentUpon>crystalUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crystalUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D_CONNECTIONS\connection.vb" />
+    <Compile Include="D_CONNECTIONS\container.Designer.vb">
+      <DependentUpon>container.vb</DependentUpon>
+    </Compile>
+    <Compile Include="D_CONNECTIONS\container.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm1-WELCOME.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm1-WELCOME.Designer.vb">
+      <DependentUpon>frm1-WELCOME.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm2-VERIFICATION.Designer.vb">
+      <DependentUpon>frm2-VERIFICATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm2-VERIFICATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm3-REGISTRATION.Designer.vb">
+      <DependentUpon>frm3-REGISTRATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm3-REGISTRATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm4-MAIN.Designer.vb">
+      <DependentUpon>frm4-MAIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm4-MAIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm5-STOCKS.Designer.vb">
+      <DependentUpon>frm5-STOCKS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm5-STOCKS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm6-CASHIER.Designer.vb">
+      <DependentUpon>frm6-CASHIER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm6-CASHIER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm7-REPORTS.Designer.vb">
+      <DependentUpon>frm7-REPORTS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_WINDOWS-FORMS\frm7-REPORTS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="C_CRYSTAL-EDITOR\zUser.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>zUser.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="C_CRYSTAL-EDITOR\zTryStocks.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>zTryStocks.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="C_CRYSTAL-EDITOR\zAttendance.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>zAttendance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="C_CRYSTAL-EDITOR\zTransactions.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>zTransactions.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="crystalAttendance.resx">
+      <DependentUpon>crystalAttendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crystalTransactions.resx">
+      <DependentUpon>crystalTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crystalTryStocks.resx">
+      <DependentUpon>crystalTryStocks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crystalUser.resx">
+      <DependentUpon>crystalUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D_CONNECTIONS\container.resx">
+      <DependentUpon>container.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_WINDOWS-FORMS\frm1-WELCOME.resx">
+      <DependentUpon>frm1-WELCOME.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_WINDOWS-FORMS\frm2-VERIFICATION.resx">
+      <DependentUpon>frm2-VERIFICATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_WINDOWS-FORMS\frm3-REGISTRATION.resx">
+      <DependentUpon>frm3-REGISTRATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_WINDOWS-FORMS\frm4-MAIN.resx">
+      <DependentUpon>frm4-MAIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_WINDOWS-FORMS\frm5-STOCKS.resx">
+      <DependentUpon>frm5-STOCKS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_WINDOWS-FORMS\frm6-CASHIER.resx">
+      <DependentUpon>frm6-CASHIER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_WINDOWS-FORMS\frm7-REPORTS.resx">
+      <DependentUpon>frm7-REPORTS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_CRYSTAL-EDITOR\zUser.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>zUser.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_CRYSTAL-EDITOR\zTryStocks.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>zTryStocks.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_CRYSTAL-EDITOR\zAttendance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>zAttendance.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_CRYSTAL-EDITOR\zTransactions.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>zTransactions.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="B_CRYSTAL-DESIGN\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
